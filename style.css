@@ -1,0 +1,179 @@
+/* body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #4a0080;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #4a0080;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: white;
+    margin: 0 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover {
+    background-color: #7b2fbe;
+    text-decoration: underline;
+}
+
+/* class "box" */
+.box {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    
+    background-color: #f3e8ff;
+    
+    border: none;
+    border-radius: 10px;
+    border-left: 4px solid #7b2fbe;
+    padding-left: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+
+    text-align: center;
+}
+
+
+/* skills span */
+.tag {
+    background-color: #d6b4fc;
+    color: #343232;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+/*Contact-box div*/
+.contact-box {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #f3e8ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* form input,textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Send Message button */
+button {
+    background-color: #4a0080;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+/* footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* h1 */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* box p*/
+.box p {
+    font-size: 1.1rem;
+    color: #343232
+}
+
+/* h2 */
+h2 {
+    font-size: 2.0rem;
+    margin-bottom: 10px;
+}
+
+/* h3 */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* course list*/
+ul {
+    list-style: none;
+    padding: 0;
+    color: #7b2fbe;
+}
+
+/* blog card*/
+.blog-card {
+    border-left: 4px solid #4a0080;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+/* read medium */
+.read {
+    color: #7b2fbe;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #d6b4fc;
+    padding-bottom: 2px;
+}
+
+.read:hover {
+    color: #4a0080;
+    border-bottom: 2px solid #7b2fbe;
+}
+
+
+/* media query */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+        display: block;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}

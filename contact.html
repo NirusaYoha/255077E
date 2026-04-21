@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    
+    <div class="contact-box">
+        <h2>Contact Me</h2>
+
+       <form id="contactForm" onsubmit="event.preventDefault(); validateForm();">
+
+       <label for="fullname">Name</label> <br>
+       <input type="text" id="fullname"
+       placeholder="Your Name" required> <br>
+
+       <label for="email">Email</label> <br>
+       <input type="email" id="email" 
+       placeholder="Your Email" required> <br>
+
+       <label for="subject">Subject</label> <br>
+       <input type="text" id="subject" 
+       placeholder="Subject" required> <br>
+       
+       <label for="message">Message</label> <br>
+       <textarea id="message" placeholder="Message"></textarea> <br>
+       <button type="button" onclick="validateForm()">Send Message</button>
+    </form>
+
+    <p id="error-msg" style="display:none; color:red;">Please fill in all fields</p>
+    <p id="success-msg" style="display:none; color:green;">Messeage sent successfully!</p>
+    </div>
+    
+
+    <script src="script.js"></script>
+
+    <footer>
+        <a href="https://www.linkedin.com/in/nirusa-yohananth-917b0b380/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/NirusaYoha" target="_blank"><i class="fab fa-github"></i></a>
+        <p>&copy; 2026 Nirusa Yohananth. <br> All rights reserved. </p>
+    </footer>
+</body>
+</html>
+
